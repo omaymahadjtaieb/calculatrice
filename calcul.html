@@ -1,30 +1,34 @@
+<!DOCTYPE html>
 <html>
-    <heat>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
 
-    </heat>
-    <body>
-        <table>
-            <tr>
-                <td> 
-                    <input type="text" id="0">
-                </td>
-            </tr>
-        </table>
+    <script>
+        function fillcalc(clickedid){
+            document.getElementById("res").value=document.getElementById("res").value + clickedid;
+        }
 
-        <button type="button"onclick="input('1')">1</button>
-        <button type="button"onclick="input('2')">2</button>
-        <button type="button"onclick="input('3')">3</button>
-        <button type="button"onclick="input('+')">+</button>
-        <br><button type="button"onclick="input('4')">4</button>
-        <button type="button"onclick="input('5')">5</button>
-        <button type="button"onclick="input('6')">6</button>
-        <button type="button"onclick="input('-')">-</button>
-        <br><button type="button"onclick="input('7')">7</button>
-        <button type="button"onclick="input('8')">8</button>
-        <button type="button"onclick="input('9')">9</button>
-        <button type="button"onclick="input('*')">*</button>
-        <br><button type="button"onclick="input('=')">=</button>
-        <button type="button"onclick="input('/')">/</button>
-        <button type="button"onclick="input('%')">%</button>
-    </body>
+
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Calculatrice
+    </h1>
+    
+    <br><br><br>
+
+    <input type="number" id="res" width="100%"> 
+
+     
+    <div style="text-align: center;" width="100%">
+      <div style="text-align: left;" width="100%">
+        <button  onclick="fillcalc(this.id)" width="30%" id="1">1</button>
+        <button  onclick="fillcalc(this.id)" width="30%" id="2">2</button>
+        <button  onclick="" width="30%">3</button>
+        <button  onclick="" width="30%">+</button>
+        
+      </div>
+    </div>
+  </body>
 </html>
